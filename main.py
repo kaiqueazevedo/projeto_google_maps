@@ -34,11 +34,9 @@ def main():
 
     # Procura o campo de busca do Google Maps / Caso não encontre retorna erro e fecha automação
     try:
-<<<<<<< HEAD
-        campo_busca = browser.find_element(By.ID, "UGojuc")
-=======
+
+
         campo_busca = browser.find_element(By.CSS_SELECTOR, ".UGojuc.fontBodyMedium.EmSKud.lpggsf")
->>>>>>> 10cb059 (refactor seach path in google maps)
     except Exception:
         logging.critical("Erro ao localizar campo de busca")
         browser.quit()

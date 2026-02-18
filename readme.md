@@ -31,7 +31,7 @@ O script faz o seguinte:
   * Endereço completo
 * Salva os resultados em **JSON** e **Excel** (`output/`).
 * Cria logs detalhados em **`logs/`** para acompanhar toda a execução.
->>>>>>> 10cb059 (refactor seach path in google maps)
+
 
 ---
 
@@ -39,15 +39,14 @@ O script faz o seguinte:
 
 O projeto precisa de **Python 3.12+** e das bibliotecas abaixo:
 
-<<<<<<< HEAD
  selenium
  openpyxl
  logging (já incluso no Python)
-=======
+
 * selenium
 * openpyxl
 * logging (já incluso no Python)
->>>>>>> 10cb059 (refactor seach path in google maps)
+
 
 Todas as dependências estão listadas no arquivo `requirements.txt`, que facilita a instalação.
 

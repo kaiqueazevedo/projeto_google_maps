@@ -101,21 +101,20 @@ python main.py
 
 Tudo que você precisa alterar está no arquivo `config.py`:
 
-<<<<<<< HEAD
  `BUSCAS`: termos de pesquisa (ex: `"restaurantes"`, `"academias"`).
  `LIMITE_RESULTADOS`: define quantos resultados pegar por pesquisa (use `None` para pegar todos).
  `TEMPO_CARREGAMENTO`: tempo de espera para a página carregar (segundos).
  `TEMPO_ENTRE_ACOES`: tempo de espera entre ações (segundos).
  `ARQUIVO_JSON` e `ARQUIVO_EXCEL`: caminhos dos arquivos de saída.
  `LOG_INFO` e `LOG_AUTOMATION`: caminhos dos arquivos de log.
-=======
+
 * `BUSCAS`: termos de pesquisa (ex: `"restaurantes"`, `"academias"`).
 * `LIMITE_RESULTADOS`: define quantos resultados pegar por pesquisa (use `None` para pegar todos).
 * `TEMPO_CARREGAMENTO`: tempo de espera para a página carregar (segundos).
 * `TEMPO_ENTRE_ACOES`: tempo de espera entre ações (segundos).
 * `ARQUIVO_JSON` e `ARQUIVO_EXCEL`: caminhos dos arquivos de saída.
 * `LOG_INFO` e `LOG_AUTOMATION`: caminhos dos arquivos de log.
->>>>>>> 10cb059 (refactor seach path in google maps)
+
 
 > O script cria automaticamente as pastas `logs/` e `output/` se elas não existirem, então você não precisa se preocupar.
 
@@ -145,12 +144,11 @@ projeto
 
 ## Observações
 
-<<<<<<< HEAD
+
  Use **Chrome** como navegador para a automação funcionar corretamente.
  Se for executar em outro computador, não esqueça de ter o **ChromeDriver** compatível instalado.
  A automação é totalmente **portável**, graças aos caminhos relativos no `config.py`.
-=======
+
 * Use **Chrome** como navegador para a automação funcionar corretamente.
 * Se for executar em outro computador, não esqueça de ter o **ChromeDriver** compatível instalado.
 * A automação é totalmente **portável**, graças aos caminhos relativos no `config.py`.
->>>>>>> 10cb059 (refactor seach path in google maps)

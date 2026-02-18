@@ -1,123 +1,109 @@
-# Automação Google Maps – RPA
+Automação Google Maps – RPA com Python + Selenium
 
-Este projeto é uma automação em Python que acessa o **Google Maps** e coleta informações sobre estabelecimentos como **restaurantes, academias e sorveterias**.
+Este projeto consiste em uma automação RPA desenvolvida em Python que acessa o Google Maps para coletar dados estruturados de estabelecimentos como restaurantes, academias e sorveterias.
 
-O objetivo é gerar **arquivos JSON e Excel** com dados organizados e ainda registrar **logs detalhados da execução**.
+O objetivo é gerar arquivos organizados em JSON e Excel, além de manter logs detalhados para rastreabilidade da execução.
 
----
+## Objetivo
+
+Simular um cenário real de automação para coleta estruturada de dados com foco em:
+
+Inteligência de mercado
+
+Enriquecimento de base de dados
+
+Análise de concorrência
+
+Geração de leads
 
 ## Funcionalidades
 
-O script faz o seguinte:
+A automação:
 
- Busca os estabelecimentos no Google Maps usando os termos definidos em `config.py`.
- Coleta dados como:
+Realiza buscas no Google Maps com base nos termos definidos em config.py
 
-   Nome do estabelecimento
-   Tipo (restaurante, academia ou sorveteria)
-   Nota
-   Quantidade de avaliações
-   Endereço completo
- Salva os resultados em **JSON** e **Excel** (`output/`).
- Cria logs detalhados em **`logs/`** para acompanhar toda a execução.
+Coleta as seguintes informações:
 
-* Busca os estabelecimentos no Google Maps usando os termos definidos em `config.py`.
-* Coleta dados como:
+Nome do estabelecimento
 
-  * Nome do estabelecimento
-  * Tipo (restaurante, academia ou sorveteria)
-  * Nota
-  * Quantidade de avaliações
-  * Endereço completo
-* Salva os resultados em **JSON** e **Excel** (`output/`).
-* Cria logs detalhados em **`logs/`** para acompanhar toda a execução.
+Categoria
 
+Nota
 
----
+Quantidade de avaliações
 
-## Dependências
+Endereço completo
 
-O projeto precisa de **Python 3.12+** e das bibliotecas abaixo:
+Exporta os dados para:
 
- selenium
- openpyxl
- logging (já incluso no Python)
+JSON
 
-* selenium
-* openpyxl
-* logging (já incluso no Python)
+Excel (.xlsx)
 
+Gera logs detalhados de execução
 
-Todas as dependências estão listadas no arquivo `requirements.txt`, que facilita a instalação.
+Cria automaticamente as pastas logs/ e output/ caso não existam
 
----
+Permite limitar a quantidade de resultados por busca
 
-## Como rodar o projeto
+# Tecnologias Utilizadas
 
-1. Clone o repositório:
+Python 3.12+
 
-```bash
-git clone <https://github.com/kaiqueazevedo/projeto_google_maps.git>
-cd <projeto_google_maps>
-```
+Selenium
 
-2. Crie a virtual environment:
+OpenPyXL
 
-```bash
+Logging (biblioteca padrão do Python)
+
+Todas as dependências estão listadas em requirements.txt.
+
+## Como Executar
+Clone o repositório
+git clone https://github.com/kaiqueazevedo/projeto_google_maps.git
+cd projeto_google_maps
+
+Crie e ative a virtual environment
 python3 -m venv venv
-```
 
-3. Ative a virtual environment:
 
-```bash
-# Linux / Mac
+Linux / Mac:
+
 source venv/bin/activate
 
-# Windows CMD
+
+Windows:
+
 venv\Scripts\activate
 
-# Windows PowerShell
-venv\Scripts\Activate.ps1
-```
-
-4. Instale as dependências:
-
-```bash
+Instale as dependências
 pip install -r requirements.txt
-```
 
-5. Execute a automação:
-
-```bash
+Execute a automação
 python main.py
-```
-
-> O script vai abrir o Chrome, fazer as buscas e gerar os arquivos JSON/Excel na pasta `output/` e os logs em `logs/`.
-
----
-
-## Configurações importantes
-
-Tudo que você precisa alterar está no arquivo `config.py`:
-
- `BUSCAS`: termos de pesquisa (ex: `"restaurantes"`, `"academias"`).
- `LIMITE_RESULTADOS`: define quantos resultados pegar por pesquisa (use `None` para pegar todos).
- `TEMPO_CARREGAMENTO`: tempo de espera para a página carregar (segundos).
- `TEMPO_ENTRE_ACOES`: tempo de espera entre ações (segundos).
- `ARQUIVO_JSON` e `ARQUIVO_EXCEL`: caminhos dos arquivos de saída.
- `LOG_INFO` e `LOG_AUTOMATION`: caminhos dos arquivos de log.
-
-* `BUSCAS`: termos de pesquisa (ex: `"restaurantes"`, `"academias"`).
-* `LIMITE_RESULTADOS`: define quantos resultados pegar por pesquisa (use `None` para pegar todos).
-* `TEMPO_CARREGAMENTO`: tempo de espera para a página carregar (segundos).
-* `TEMPO_ENTRE_ACOES`: tempo de espera entre ações (segundos).
-* `ARQUIVO_JSON` e `ARQUIVO_EXCEL`: caminhos dos arquivos de saída.
-* `LOG_INFO` e `LOG_AUTOMATION`: caminhos dos arquivos de log.
 
 
-> O script cria automaticamente as pastas `logs/` e `output/` se elas não existirem, então você não precisa se preocupar.
+O navegador Chrome será aberto automaticamente e os arquivos serão gerados nas pastas:
 
----
+output/
+
+logs/
+
+## Configurações
+
+As principais configurações estão no arquivo config.py:
+
+BUSCAS → termos de pesquisa
+
+LIMITE_RESULTADOS → quantidade máxima de resultados por busca
+
+TEMPO_CARREGAMENTO → tempo de espera para carregamento da página
+
+TEMPO_ENTRE_ACOES → intervalo entre interações
+
+ARQUIVO_JSON e ARQUIVO_EXCEL → caminhos de saída
+
+LOG_INFO e LOG_AUTOMATION → caminhos de log
 
 ## Estrutura de pastas
 
@@ -139,15 +125,14 @@ projeto
     └─ resultados.xlsx
 ```
 
----
-
 ## Observações
 
+Necessário ter Google Chrome instalado
 
- Use **Chrome** como navegador para a automação funcionar corretamente.
- Se for executar em outro computador, não esqueça de ter o **ChromeDriver** compatível instalado.
- A automação é totalmente **portável**, graças aos caminhos relativos no `config.py`.
+ChromeDriver compatível com a versão do navegador
 
-* Use **Chrome** como navegador para a automação funcionar corretamente.
-* Se for executar em outro computador, não esqueça de ter o **ChromeDriver** compatível instalado.
-* A automação é totalmente **portável**, graças aos caminhos relativos no `config.py`.
+Projeto estruturado com caminhos relativos, permitindo portabilidade
+
+
+
+

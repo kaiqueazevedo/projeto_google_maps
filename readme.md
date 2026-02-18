@@ -4,7 +4,7 @@ Este projeto consiste em uma automação RPA desenvolvida em Python que acessa o
 
 O objetivo é gerar arquivos organizados em JSON e Excel, além de manter logs detalhados para rastreabilidade da execução.
 
-## Objetivo
+Objetivo
 
 Simular um cenário real de automação para coleta estruturada de dados com foco em:
 
@@ -95,15 +95,15 @@ As principais configurações estão no arquivo config.py:
 
 BUSCAS → termos de pesquisa
 
-LIMITE_RESULTADOS → quantidade máxima de resultados por busca
+LIMITE_RESULTADOS > quantidade máxima de resultados por busca
 
-TEMPO_CARREGAMENTO → tempo de espera para carregamento da página
+TEMPO_CARREGAMENTO > tempo de espera para carregamento da página
 
-TEMPO_ENTRE_ACOES → intervalo entre interações
+TEMPO_ENTRE_ACOES > intervalo entre interações
 
-ARQUIVO_JSON e ARQUIVO_EXCEL → caminhos de saída
+ARQUIVO_JSON e ARQUIVO_EXCEL > caminhos de saída
 
-LOG_INFO e LOG_AUTOMATION → caminhos de log
+LOG_INFO e LOG_AUTOMATION > caminhos de log
 
 ## Estrutura de pastas
 
@@ -125,7 +125,7 @@ projeto
     └─ resultados.xlsx
 ```
 
-## Observações
+Observações
 
 Necessário ter Google Chrome instalado
 

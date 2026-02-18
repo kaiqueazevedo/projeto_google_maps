@@ -7,55 +7,35 @@ O objetivo é gerar arquivos organizados em JSON e Excel, além de manter logs d
 ### Objetivo
 
 Simular um cenário real de automação para coleta estruturada de dados com foco em:
-
 Inteligência de mercado
-
 Enriquecimento de base de dados
-
 Análise de concorrência
-
 Geração de leads
 
 ### Funcionalidades
 
-A automação:
+#### A automação:
 
 Realiza buscas no Google Maps com base nos termos definidos em config.py
-
 Coleta as seguintes informações:
-
 Nome do estabelecimento
-
 Categoria
-
 Nota
-
 Quantidade de avaliações
-
 Endereço completo
-
 Exporta os dados para:
-
 JSON
-
 Excel (.xlsx)
-
 Gera logs detalhados de execução
-
 Cria automaticamente as pastas logs/ e output/ caso não existam
-
 Permite limitar a quantidade de resultados por busca
 
 #### Tecnologias Utilizadas
 
 Python 3.12+
-
 Selenium
-
 OpenPyXL
-
 Logging (biblioteca padrão do Python)
-
 Todas as dependências estão listadas em requirements.txt.
 
 #### Como Executar
@@ -66,14 +46,10 @@ cd projeto_google_maps
 Crie e ative a virtual environment
 python3 -m venv venv
 
-
 Linux / Mac:
-
 source venv/bin/activate
 
-
 Windows:
-
 venv\Scripts\activate
 
 Instale as dependências
@@ -86,23 +62,18 @@ python main.py
 O navegador Chrome será aberto automaticamente e os arquivos serão gerados nas pastas:
 
 output/
-
 logs/
 
 #### Configurações
 
 As principais configurações estão no arquivo config.py:
 
-BUSCAS → termos de pesquisa
+BUSCAS → termos de pesquisa:
 
 LIMITE_RESULTADOS > quantidade máxima de resultados por busca
-
 TEMPO_CARREGAMENTO > tempo de espera para carregamento da página
-
 TEMPO_ENTRE_ACOES > intervalo entre interações
-
 ARQUIVO_JSON e ARQUIVO_EXCEL > caminhos de saída
-
 LOG_INFO e LOG_AUTOMATION > caminhos de log
 
 #### Estrutura de pastas
@@ -128,9 +99,7 @@ projeto
 Observações
 
 Necessário ter Google Chrome instalado
-
 ChromeDriver compatível com a versão do navegador
-
 Projeto estruturado com caminhos relativos, permitindo portabilidade
 
 

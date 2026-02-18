@@ -16,7 +16,7 @@ Análise de concorrência
 
 Geração de leads
 
-## Funcionalidades
+#### Funcionalidades
 
 A automação:
 
@@ -46,7 +46,7 @@ Cria automaticamente as pastas logs/ e output/ caso não existam
 
 Permite limitar a quantidade de resultados por busca
 
-# Tecnologias Utilizadas
+#### Tecnologias Utilizadas
 
 Python 3.12+
 
@@ -58,7 +58,7 @@ Logging (biblioteca padrão do Python)
 
 Todas as dependências estão listadas em requirements.txt.
 
-## Como Executar
+#### Como Executar
 Clone o repositório
 git clone https://github.com/kaiqueazevedo/projeto_google_maps.git
 cd projeto_google_maps
@@ -89,7 +89,7 @@ output/
 
 logs/
 
-## Configurações
+#### Configurações
 
 As principais configurações estão no arquivo config.py:
 
@@ -105,7 +105,7 @@ ARQUIVO_JSON e ARQUIVO_EXCEL > caminhos de saída
 
 LOG_INFO e LOG_AUTOMATION > caminhos de log
 
-## Estrutura de pastas
+#### Estrutura de pastas
 
 organização do projeto:
 

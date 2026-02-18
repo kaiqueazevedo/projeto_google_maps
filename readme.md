@@ -1,10 +1,10 @@
-Automação Google Maps – RPA com Python + Selenium
+## Automação Google Maps – RPA com Python + Selenium
 
 Este projeto consiste em uma automação RPA desenvolvida em Python que acessa o Google Maps para coletar dados estruturados de estabelecimentos como restaurantes, academias e sorveterias.
 
 O objetivo é gerar arquivos organizados em JSON e Excel, além de manter logs detalhados para rastreabilidade da execução.
 
-Objetivo
+### Objetivo
 
 Simular um cenário real de automação para coleta estruturada de dados com foco em:
 
@@ -16,7 +16,7 @@ Análise de concorrência
 
 Geração de leads
 
-#### Funcionalidades
+### Funcionalidades
 
 A automação:
 

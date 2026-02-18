@@ -10,7 +10,6 @@ O objetivo é gerar **arquivos JSON e Excel** com dados organizados e ainda regi
 
 O script faz o seguinte:
 
-<<<<<<< HEAD
  Busca os estabelecimentos no Google Maps usando os termos definidos em `config.py`.
  Coleta dados como:
 
@@ -21,7 +20,7 @@ O script faz o seguinte:
    Endereço completo
  Salva os resultados em **JSON** e **Excel** (`output/`).
  Cria logs detalhados em **`logs/`** para acompanhar toda a execução.
-=======
+
 * Busca os estabelecimentos no Google Maps usando os termos definidos em `config.py`.
 * Coleta dados como:
 
